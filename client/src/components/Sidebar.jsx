@@ -34,7 +34,7 @@ const Sidebar = () => {
                         </div>
                     </NavLink>
                     <NavLink
-                        to="/pim"
+                        to="/pim/view"
                         className={({ isActive }) =>
                             `block py-1 rounded-tr-2xl rounded-br-2xl mt-1 hover:bg-orange-400 hover:text-white ${isActive ? 'bg-orange-400 text-white' : ''
                             }`

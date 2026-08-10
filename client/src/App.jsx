@@ -2,8 +2,11 @@ import React from 'react'
 import Login from './pages/Login'
 import { Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
-import Pim from './pages/Pim'
+import PimView from './pages/pim/PimView'
 import DashboardLayout from './components/DashboardLayout'
+import PimLayout from './components/PimLayout'
+import PimAdd from './pages/pim/PimAdd'
+import PimEdit from './pages/pim/PimEdit'
 
 const App = () => {
   return (
@@ -11,7 +14,11 @@ const App = () => {
       <Route path="/" element={<Login />} />
       <Route element={<DashboardLayout />}>
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/pim" element={<Pim />} />
+        <Route element={<PimLayout />} >
+          <Route path="/pim/view" element={<PimView />} />
+          <Route path="/pim/add" element={<PimAdd />} />
+          <Route path="/pim/edit" element={<PimEdit />} />
+        </Route>
       </Route>
 
     </Routes>
