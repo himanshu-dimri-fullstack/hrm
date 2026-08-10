@@ -14,7 +14,7 @@ const App = () => {
       <Route path="/" element={<Login />} />
       <Route element={<DashboardLayout />}>
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route element={<PimLayout />} >
+        <Route path="/pim" element={<PimLayout />} >
           <Route path="/pim/view" element={<PimView />} />
           <Route path="/pim/add" element={<PimAdd />} />
           <Route path="/pim/edit" element={<PimEdit />} />
