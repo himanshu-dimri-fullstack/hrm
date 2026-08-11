@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const DashboardLayout = () => {
     return (
-        <div className='bg-[#eee] max-h-screen overflow-y-hidden relative'>
+        <div className='bg-[#eee] max-h-screen relative'>
             <Navbar />
             <div className='absolute top-0 left-0'>
                 <Sidebar />

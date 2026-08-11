@@ -1,14 +1,10 @@
 import React from 'react'
+import Form from '../../components/Form'
 
 const PimEdit = () => {
     return (
-        <div>
-            <form>
-                <div>
-                    <label>Name</label>
-                    <input className='' />
-                </div>
-            </form>
+        <div className='mt-5 bg-white p-6'>
+            <Form />
         </div>
     )
 }

@@ -3,6 +3,57 @@ import { MdEdit } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 
 const PimView = () => {
+    const data = [
+        {
+            id: 1,
+            name: "Himanshu",
+            title: "Full Stack Developer",
+            status: "Full Time"
+
+        },
+        {
+            id: 2,
+            name: "Himanshu",
+            title: "Full Stack Developer",
+            status: "Full Time"
+
+        },
+        {
+            id: 3,
+            name: "Himanshu",
+            title: "Full Stack Developer",
+            status: "Full Time"
+
+        },
+        {
+            id: 4,
+            name: "Himanshu",
+            title: "Full Stack Developer",
+            status: "Full Time"
+
+        },
+        {
+            id: 5,
+            name: "Himanshu",
+            title: "Full Stack Developer",
+            status: "Full Time"
+
+        },
+        {
+            id: 6,
+            name: "Himanshu",
+            title: "Full Stack Developer",
+            status: "Full Time"
+
+        },
+        {
+            id: 7,
+            name: "Himanshu",
+            title: "Full Stack Developer",
+            status: "Full Time"
+
+        }
+    ]
     return (
         <div>
             <div className='bg-white rounded p-6 mt-5'>
@@ -48,108 +99,28 @@ const PimView = () => {
                         <th className='border border-[#bbb] py-2'>Employment Status</th>
                         <th className='border border-[#bbb] py-2'>Actions</th>
                     </tr>
+                    {
+                        data.map((item) => {
+                            return (
+                                <tr className='border border-[#eee] text-center'>
+                                    <td className='border border-[#bbb] py-2'>{item.id}</td>
+                                    <td className='border border-[#bbb] py-2'>{item.name}</td>
+                                    <td className='border border-[#bbb] py-2'>{item.title}</td>
+                                    <td className='border border-[#bbb] py-2'>{item.status}</td>
+                                    <td className='border border-[#bbb] py-2'>
+                                        <div className='flex justify-center gap-1'>
+                                            <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
+                                            <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
+                                        </div>
 
-                    <tr className='border border-[#eee] text-center'>
-                        <td className='border border-[#bbb] py-2'>112233</td>
-                        <td className='border border-[#bbb] py-2'>Himanshu</td>
-                        <td className='border border-[#bbb] py-2'>Full Stack Developer</td>
-                        <td className='border border-[#bbb] py-2'>Full Time</td>
-                        <td className='border border-[#bbb] py-2'>
-                            <div className='flex justify-center gap-1'>
-                                <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
-                                <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                    <tr className='border border-[#eee] text-center'>
-                        <td className='border border-[#bbb] py-2'>112233</td>
-                        <td className='border border-[#bbb] py-2'>Himanshu</td>
-                        <td className='border border-[#bbb] py-2'>Full Stack Developer</td>
-                        <td className='border border-[#bbb] py-2'>Full Time</td>
-                        <td className='border border-[#bbb] py-2'>
-                            <div className='flex justify-center gap-1'>
-                                <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
-                                <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                    <tr className='border border-[#eee] text-center'>
-                        <td className='border border-[#bbb] py-2'>112233</td>
-                        <td className='border border-[#bbb] py-2'>Himanshu</td>
-                        <td className='border border-[#bbb] py-2'>Full Stack Developer</td>
-                        <td className='border border-[#bbb] py-2'>Full Time</td>
-                        <td className='border border-[#bbb] py-2'>
-                            <div className='flex justify-center gap-1'>
-                                <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
-                                <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                    <tr className='border border-[#eee] text-center'>
-                        <td className='border border-[#bbb] py-2'>112233</td>
-                        <td className='border border-[#bbb] py-2'>Himanshu</td>
-                        <td className='border border-[#bbb] py-2'>Full Stack Developer</td>
-                        <td className='border border-[#bbb] py-2'>Full Time</td>
-                        <td className='border border-[#bbb] py-2'>
-                            <div className='flex justify-center gap-1'>
-                                <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
-                                <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                    <tr className='border border-[#eee] text-center'>
-                        <td className='border border-[#bbb] py-2'>112233</td>
-                        <td className='border border-[#bbb] py-2'>Himanshu</td>
-                        <td className='border border-[#bbb] py-2'>Full Stack Developer</td>
-                        <td className='border border-[#bbb] py-2'>Full Time</td>
-                        <td className='border border-[#bbb] py-2'>
-                            <div className='flex justify-center gap-1'>
-                                <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
-                                <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                    <tr className='border border-[#eee] text-center'>
-                        <td className='border border-[#bbb] py-2'>112233</td>
-                        <td className='border border-[#bbb] py-2'>Himanshu</td>
-                        <td className='border border-[#bbb] py-2'>Full Stack Developer</td>
-                        <td className='border border-[#bbb] py-2'>Full Time</td>
-                        <td className='border border-[#bbb] py-2'>
-                            <div className='flex justify-center gap-1'>
-                                <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
-                                <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
-                            </div>
-
-                        </td>
-                    </tr>
-
-                    <tr className='border border-[#eee] text-center'>
-                        <td className='border border-[#bbb] py-2'>112233</td>
-                        <td className='border border-[#bbb] py-2'>Himanshu</td>
-                        <td className='border border-[#bbb] py-2'>Full Stack Developer</td>
-                        <td className='border border-[#bbb] py-2'>Full Time</td>
-                        <td className='border border-[#bbb] py-2'>
-                            <div className='flex justify-center gap-1'>
-                                <button className='text-white bg-green-400 rounded-[50%] p-2'><MdEdit /></button>
-                                <button className='text-white bg-red-400 rounded-[50%] p-2'><MdDelete /></button>
-                            </div>
-
-                        </td>
-                    </tr>
-
+                                    </td>
+                                </tr >
+                            )
+                        })
+                    }
                 </table>
             </div>
-        </div>
+        </div >
     )
 }
 
