@@ -2,7 +2,14 @@ import React from 'react'
 
 const PimEdit = () => {
     return (
-        <div>PimEdit</div>
+        <div>
+            <form>
+                <div>
+                    <label>Name</label>
+                    <input className='' />
+                </div>
+            </form>
+        </div>
     )
 }
 

@@ -6,19 +6,12 @@ import { Link } from 'react-router-dom';
 
 const DashboardLayout = () => {
     return (
-        <div className='bg-[#eee] h-screen relative'>
+        <div className='bg-[#eee] max-h-screen overflow-y-hidden relative'>
             <Navbar />
             <div className='absolute top-0 left-0'>
                 <Sidebar />
             </div>
-            {/* <div className='bg-black/30 backdrop-blur-xl w-50 flex absolute top-16.25 right-5'>
-                <ul className='py-3 pl-3'>
-                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">About</Link></li>
-                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">Support</Link></li>
-                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">Change Password</Link></li>
-                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">Logout</Link></li>
-                </ul>
-            </div> */}
+
             <div className='pl-60 pr-10'>
                 <Outlet />
             </div>
@@ -27,3 +20,13 @@ const DashboardLayout = () => {
 }
 
 export default DashboardLayout
+
+
+{/* <div className='bg-black/30 backdrop-blur-xl w-50 flex absolute top-16.25 right-5'>
+                <ul className='py-3 pl-3'>
+                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">About</Link></li>
+                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">Support</Link></li>
+                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">Change Password</Link></li>
+                    <li className='mb-1 rounded hover:bg-orange-700/30 hover:backdrop-blur px-3 hover:text-white'><Link to="/">Logout</Link></li>
+                </ul>
+            </div> */}

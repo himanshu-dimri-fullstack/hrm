@@ -17,7 +17,7 @@ const PimLayout = () => {
                     </div>
                 </div>
             </nav>
-            <div>
+            <div className='h-[80vh] overflow-scroll'>
                 <Outlet />
             </div>
         </div>
