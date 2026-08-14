@@ -11,8 +11,7 @@ const DashboardLayout = () => {
             <div className='absolute top-0 left-0'>
                 <Sidebar />
             </div>
-
-            <div className='pl-60 pr-10'>
+            <div className='lg:pl-[20vw] md:pl-[20vw] pr-10'>
                 <Outlet />
             </div>
         </div>
